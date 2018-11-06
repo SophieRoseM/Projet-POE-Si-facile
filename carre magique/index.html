@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Carré magique</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Jeu du carré magique</h1>
+        <p>La somme de chaque valeur de chaque ligne, de chaque colonne, de chaque diagonale doit être égale à 15.</p>
+    </header>
+    <main>
+        <form action="" method="post" id="carreM">
+            <div class="carre">
+                <div class="ligne">
+                    <input type=    "text" id="valeur1">
+                    <input type="text" id="valeur2">
+                    <input type="text" id="valeur3">
+                </div>
+                <div class="ligne">
+                    <input type="text" id="valeur4">
+                    <input type="text" id="valeur5">
+                    <input type="text" id="valeur6">
+                </div>
+                <div class="ligne">
+                    <input type="text" id="valeur7">
+                    <input type="text" id="valeur8">
+                    <input type="text" id="valeur9">
+                </div>
+            </div>
+            <input type="submit">
+        </form>
+            <button class="reset">Reset</button>
+
+        <div class="reponse">
+        </div>
+        <div class="temps">
+            <p id="pTemp"></p>
+        </div>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
