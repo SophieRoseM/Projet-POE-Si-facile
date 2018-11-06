@@ -1,0 +1,120 @@
+//Déclaration
+tableau Couleurs[8];
+tableau Reponse[4];
+tableau Test[4];
+booleen BienPlace1 <= Faux;
+booleen BienPlace2 <= Faux;
+booleen BienPlace3 <= Faux;
+booleen BienPlace4 <= Faux;
+booleen BonneCouleur1 <= Faux;
+booleen BonneCouleur2 <= Faux;
+booleen BonneCouleur3 <= Faux;
+booleen BonneCouleur4 <= Faux;
+Entier NbTentative <= 0;
+Chaine couleur;
+Bouton couleur1;
+Bouton couleur2;
+Bouton couleur3;
+Bouton couleur4;
+Bouton couleur5;
+Bouton couleur6;
+Bouton couleur7;
+Bouton couleur8;
+Entier Tampon <=0;
+Entier TamponTest <= 0;
+
+//*affiche // affiche un bouton
+//Début 
+Reponse[] <= [NombreAléatoire de 1 à 8,NombreAléatoire de 1 à 8,NombreAléatoire de 1 à 8,NombreAléatoire de 1 à 8];
+// attribut des couleurs aléatoires au tableau réponse
+
+Tant que NbTentative <= 12 alors
+	affiche ("Choissiser les couleurs");
+	*affiche ("Couleur 1");
+	*affiche ("Couleur 2");
+	*affiche ("Couleur 3");
+	*affiche ("Couleur 4");
+	*affiche ("Couleur 5");
+	*affiche ("Couleur 6");
+	*affiche ("Couleur 7");
+	*affiche ("Couleur 8"); //affichage des bouton
+	*affiche ("effacer"); //bouton pour effacer
+	*affiche ("Valider"); //bouton pour valider les choix
+	//premier click rentre la valeur dans Test[0] et ainsi de suite exemple =>> Test[1,5,7,4]
+
+	Tant que Tampon < 4 alors //Test si au moins une des valeur est à la bonne place est donc la bonne couleur
+		Si Test[Tampon] = Reponse[Tampon]
+			Si Tampon = 0 alors
+				BienPlace1 <= Vrai;
+			SinonSi Tampon = 1 alors
+				BienPlace2 <= Vrai;
+			SinonSi Tampon = 2 alors
+				BienPlace3 <= Vrai;
+			SinonSi Tampon = 3 alors
+				BienPlace4 <= Vrai;
+			FinSi
+		FinSi
+	FinTant que
+
+	Tampon <= 0;
+	TamponTest <= 0;
+
+	Pour (Tampon <= 0,Tampon < 4, Tampon <= Tampon + 1) alors //Dit Si c'est la bonne couleur  mais pas au bon endroit
+		Pour (TamponTest <= 0,TamponTest < 4, TamponTest <= TamponTest +1) alors 
+			Si Test[TamponTest] = Reponse[Tampon]
+				Si TamponTest = 0 alors
+					BonneCouleur1 <= Vrai;
+				SinonSi TamponTest = 1 alors
+					BonneCouleur2 <= Vrai;
+				SinonSi TamponTest = 2 alors
+					BonneCouleur3 <= Vrai;
+				SinonSi TamponTest = 3 alors
+					BonneCouleur4 <= Vrai;
+				FinSi
+			FinSi
+
+		FinPour
+		TamponTest <= 0
+	FinPour
+
+	Tampon <= 0;
+
+	NbTentative <= NbTentative + 1;
+
+	Si BienPlace1 = Faux et BonneCouleur1 = Vrai alors //Le BienPlacé prevot sur le BonneCouleur
+		Affiche ("Case 1 est de la bonne couleur mais pas au bonne endroit");
+	Sinon BienPlace1 = Vrai alors
+		Affiche ("Case 1 est bien placé");
+	Sinon 
+		Affine ("Case1 raté");
+	FinSI
+
+	Si BienPlace2 = Faux et BonneCouleur2 = Vrai alors
+		Affiche ("Case 2 est de la bonne couleur mais pas au bonne endroit");
+	Sinon BienPlace2 = Vrai alors
+		Affiche ("Case 2 est bien placé");
+	Sinon 
+		Affine ("Case 2 raté");
+	FinSI
+
+	Si BienPlace3 = Faux et BonneCouleur3 = Vrai alors
+		Affiche ("Case 3 est de la bonne couleur mais pas au bonne endroit");
+	Sinon BienPlace1 = Vrai alors
+		Affiche ("Case 3 est bien placé");
+	Sinon 
+		Affine ("Case 3 raté");
+	FinSI
+
+	Si BienPlace4 = Faux et BonneCouleur4 = Vrai alors
+		Affiche ("Case  4 est de la bonne couleur mais pas au bonne endroit");
+	Sinon BienPlace1 = Vrai alors
+		Affiche ("Case 4 est bien placé");
+	Sinon 
+		Affine ("Case 4 raté");
+	FinSI
+
+
+		
+
+
+
