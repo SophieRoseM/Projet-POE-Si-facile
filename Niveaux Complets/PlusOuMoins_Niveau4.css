@@ -1,0 +1,311 @@
+html body{
+	margin: 0.2em;
+	padding: 0.2em;
+	width: 100%;
+	background-image: url(Wallpaper.jpeg);
+	color: white;
+	font-family: 'LearningPro', Comic Sans MS, Arial, sans-serif;
+	font-size: 1.4em;
+}
+
+@font-face{
+	font-family: LearningPro;
+	src: url(Learning_Curve_Pro/learning_curve_regular_ot_tt.ttf);
+}
+
+h1{
+	text-align: center;
+	font-family: 'LearningPro', Comic Sans MS, Arial, sans-serif;
+}
+
+.bandeau{
+	display: flex;
+	justify-content: space-between;
+	justify-content: space-around;
+}
+.choixMusique{
+	display: flex;
+	margin-left: 31em;
+}
+.pisteAudio{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 3em;
+	top: 5em;
+}
+.pisteAudio audio{
+
+}
+.bloc2b{
+	margin-top: -0.2em;
+	margin-bottom: 0.3em;
+}
+
+.bloc2{
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 275px;
+	border-radius: 10px;
+	margin-left: 11.8em;
+}
+
+.devinezUnNombre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 5em;
+	margin-top: 0.7em;
+}
+
+.tentatives{
+	margin-top: 0.7em;
+	margin-bottom: 2em;
+}
+.tentatives div{
+	text-align: center;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	font-size: 1em;
+	color: blue;
+}
+
+
+#messageGagné + p{
+	margin-top: 10em;
+}
+.boutonValider{
+	font-size: 1em;
+	color: green;
+}
+
+#boutonPoursuivre{
+
+		display: flex;
+		position: absolute;
+		top: 50%;
+		left: 20%;
+		width: 6em;
+		font-size: 1.1em;
+		font-family: 'LearningPro', sans-serif;
+}
+
+	#nombreTropPetit
+	{
+		display: flex;
+		position: absolute;
+		/*border: solid blue;*/
+		width: 12em;
+		top: 55%;
+		left: 2%;	
+		font-family: Comic Sans MS, 'LearningPro', Arial, sans-serif;
+	}
+	 #nombreTropGrand
+	 {
+		display: flex;
+		position: absolute;
+		/*border: solid white;*/
+		width: 12em;
+		top: 63%;
+		left: 2%;
+		font-family: Comic Sans MS, 'LearningPro', Arial, sans-serif;
+	 } 
+
+	 #nombreEgalite
+	 {
+		display: flex;
+		position: absolute;
+		/*border: solid red;*/
+		width: 12em;
+		top: 71%;
+		left: 2%;
+		font-family: Comic Sans MS, 'LearningPro', Arial, sans-serif;
+	 }
+
+	 #phraseNombre{
+	 	display: flex;
+	 	position: absolute;
+		/*border: solid white;*/
+		width: 12em;
+		top: 50%;
+		left: 2%;	
+	 }
+
+	 #phraseLettre{
+	 	display: flex;
+	 	position: absolute;
+		/*border: solid white;*/
+		width: 12em;
+		top: 50%;
+		left: 35%;
+	}
+
+	#blocLettre{
+		display: flex;
+		flex-direction: column;
+		margin-left: 20em;
+	}
+	
+	#lettreTropPetite{
+		display: flex;
+		position: absolute;
+		/*border: solid green;*/
+		width: 12em;
+		top: 55%;
+		left: 35%;
+		font-family: Comic Sans MS, 'LearningPro', Arial, sans-serif;
+	}
+	#lettreTropGrande
+	{
+		display: flex;
+		position: absolute;
+		/*border: solid yellow;*/
+		width: 12em;
+		top: 63%;
+		left: 35%;
+		font-family: Comic Sans MS, 'LearningPro', Arial, sans-serif;
+	}
+
+	#lettreEgalite
+	{
+		display: flex;
+		position: absolute;
+		/*border: solid red;*/
+		width: 12em;
+		top: 71%;
+		left: 35%;
+		font-family: Comic Sans MS, 'LearningPro', Arial, sans-serif;
+	}
+
+	.blocChrono{
+		display: flex;
+		position: absolute;
+		top: 70%;
+		left: 1%;
+	}
+
+	.startStop{
+		display: flex;
+		position: absolute;
+		top: 90%;
+		left: 110%;
+	}
+	#boutonCommencer{
+		display: flex;
+		position: absolute;
+		top: 50%;
+		left: 23%;
+		font-size: 1.3em;
+		font-family: 'LearningPro', sans-serif;
+	}
+
+	#boutonPoursuivreé{
+		display: flex;
+		position: absolute;
+		top: 50%;
+		left: 23%;
+		font-size: 1.3em;
+		font-family: 'LearningPro', sans-serif;
+	}
+
+	.reset{
+		display: flex;
+		position: absolute;
+		top: 90%;
+		left: 140%;
+	}
+	.chrono{
+		color: white;
+		font-family: 'LearningPro', sans-serif;
+		font-size: 1.7em;
+		text-align: center;
+		background-color:transparent;
+		border: 0px;
+		width: 6em;
+		margin-left: 2em;
+	}
+
+/*EFFET SMOKE ORIGINAL*/
+	.center{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: solid white;
+	}
+
+ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+ul li{
+	list-style: none;
+	color: #fff;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 10px;
+	filter: blur(1px);
+	animation: animate 2s linear forwards;
+	animation-iteration-count: 1;
+	animation-duration: 20s;
+}
+
+
+@keyframes animate{
+	0%
+	{
+		transform: rotate(0deg) translateY(0px);
+		opacity: 1;
+		filter: blur(1px);
+	}
+	100%
+	{
+		transform: rotate(45deg) translateY(-200px);
+		opacity: 0;
+		filter: blur(20px);
+	}
+}
+
+ul li:nth-child(1)
+{
+	animation-delay: 0s;
+}
+ul li:nth-child(2)
+{
+	animation-delay: 0.4s;
+}
+ul li:nth-child(3)
+{
+	animation-delay: 0.8s;
+}
+ul li:nth-child(4)
+{
+	animation-delay: 1.2s;
+}
+ul li:nth-child(5)
+{
+	animation-delay: 1.6s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

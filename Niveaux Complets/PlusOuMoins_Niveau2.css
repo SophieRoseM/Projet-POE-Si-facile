@@ -1,0 +1,294 @@
+html body{
+	margin: 0.2em;
+	padding: 0.2em;
+	width: 100%;
+	background-image: url(Wallpaper.jpeg);
+	background-repeat: no-repeat;
+	color: white;
+	font-family: 'LearningPro', Comic Sans MS, Arial, sans-serif;
+	font-size: 1.6em;
+}
+
+@font-face{
+	font-family: LearningPro;
+	src: url(Learning_Curve_Pro/learning_curve_regular_ot_tt.ttf);
+}
+
+h1{
+	text-align: center;
+	font-family: 'LearningPro', Comic Sans MS, Arial, sans-serif;
+}
+
+#bloc2b{
+	margin-top: -0.2em;
+	margin-bottom: 0.3em;
+}
+.bandeau{
+	display: flex;
+	justify-content: space-between;
+	justify-content: space-around;
+}
+.choixMusique{
+	display: flex;
+	margin-left: 31em;
+}
+.pisteAudio{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 3em;
+	top: 5em;
+}
+.pisteAudio audio{
+
+}
+.blocGeneral{
+	display: flex;
+	width: 800px;
+	justify-content: space-between;
+	justify-content: space-around;
+}
+
+.bloc1, .bloc2, .bloc3
+{
+border: solid white;
+/*font-family: Comic Sans MS, Arial, sans-serif;*/
+}
+.bloc1, .bloc3{
+	height: 205px;
+	width: 210px;
+	text-align: center;
+	border-radius: 2px;
+	box-shadow: 6px 6px 2px white;
+}
+
+.bloc2{
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	width: 275px;
+	border-radius: 10px;
+}
+
+.devinezUnNombre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 5em;
+	margin-top: 0.7em;
+}
+
+.vousAvezSaisi{
+	margin-top: 0.7em;
+	margin-bottom: 2em;
+}
+.vousAvezSaisi div{
+	text-align: center;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	font-size: 3em;
+	color: red;
+}
+.tentatives{
+	margin-top: 0.7em;
+	margin-bottom: 2em;
+}
+.tentatives div{
+	text-align: center;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	font-size: 3em;
+	color: blue;
+}
+
+#messageReponse div{
+	text-align: center;
+	font-size: 1.6em;
+	color: green;
+	padding-bottom: 0em;
+	height: 40px;
+	margin-top: 0.3em;
+}
+#messageReponse{
+	text-align: center;
+	font-size: 1.1em;
+	/*font-family: Comic Sans MS, Arial, sans-serif;*/
+	margin-top: 0em;
+	margin-bottom: 0.2em;
+}
+
+.donnezUnNombre{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+#blocSecondaire{
+	border-radius: solid green 5px;
+	border: solid green 1px;
+	/*box-shadow: 6px 6px 0px white;*/
+	width: 300px;
+	height: 120px;
+	margin-left: 200px;
+	margin-top: 40px;
+}
+#messageGagné{
+	text-align: center;
+	line-height: 0em; /*permet de centrer vericalement par rapport au conteneur*/
+	/*font-family: Comic Sans MS, Arial, sans-serif;*/
+	font-size: 3em;
+}
+#messageGagné + p{
+	margin-top: 10em;
+}
+.boutonValider{
+	font-size: 1em;
+	color: green;
+}
+.blocMessage{
+	/*border: solid white 1em;*/
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 3.5em;
+	margin-right: 60em;
+	height: 8em;
+
+}
+.provocation{
+	font-size: 1.6em;
+	margin-left: 3.3em;
+}
+.provocation div{
+	text-align: center;
+	font-family: 'LearningPro', 'Comic Sans MS', 'Arial', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: black;
+	line-height: 4em;
+	background: radial-gradient(closest-corner ellipse at center, white 0.1%, black 69%);
+	width: 13em;
+	height: 5em;
+}
+#boutonAide{
+	display: flex;
+	position: absolute;
+	width: 10.5em;
+	height: 2.9em;
+	top: 65%;
+	left: 18.4%;
+}
+#aide{
+	width: 12em;
+	height: 3.5em;
+	font-family: 'LearningPro', sans-serif;
+	font-size: .8em;
+	font-weight: bold;
+	margin-left: .6em;
+
+
+}
+#rappelJeu{
+	display: flex;
+	position: absolute;
+	width: 10em;
+	height: 8em;
+	top: 35%;
+	left: 18.4%;
+}
+
+#lienNiveau3{
+	display: flex;
+	text-decoration: none;
+	font-size: 1.5em;
+	text-align: center;
+	justify-content: center;
+	line-height: 5em;
+}
+#lienNiveau3:visited{
+	color: white;
+}
+/*input:invalid {
+  color: red;
+}
+input:valid{
+	color: black;
+}
+*/
+
+
+	/*.masquer{
+		border: solid white;
+		display: none;
+	}
+*/
+
+	.continuerPartieOuPas{
+		position: absolute;
+		width: 10em;
+		height: 8em;
+		top: 53%;
+		left: 27%;
+		transform: translate(-50%, -50%);
+	}
+
+	.continuerPartieOuPas{
+		background: none;
+		color: #ccc;
+		width: 230px;
+		height: 150px;
+		border: 1px solid #338033;
+		font-size: 18px;
+		border-radius: 4px;
+		transition: .6s;
+		overflow: hidden;
+	}
+
+	.continuerPartieOuPas:focus{
+		outline: none;
+	}
+
+	.continuerPartieOuPas:before{
+		content: '';
+		display: block;
+		position: absolute;
+		background: rgba(255, 255, 255,.5);
+		width: 60px;
+		height: 100%;
+		left: 0;
+		top: 0;
+		opacity: .5s;
+		filter: blur(30px);
+		transform: translateX(-130px) skewX(-15deg);
+	}
+
+	.continuerPartieOuPas:after{
+		content: '';
+		display: block;
+		position: absolute;;
+		background: rgba(255, 255, 255,.2);
+		width: 30px;
+		height: 100%;
+		left: 30px;
+		top: 0;
+		opacity: 0;
+		filter: blur(30px);
+		transform: translate(-100px) scaleX(-15deg);
+	}
+
+	.continuerPartieOuPas:hover{
+		background: #338033;
+		cursor: pointer;
+	}
+
+	.continuerPartieOuPas:hover:before{
+		transform: translateX(300px) skewX(-15deg);
+		opacity: .6;
+		transition: .7s;
+	}
+
+	.continuerPartieOuPas:hover:after {
+		transform: translateX(300px) skewX(-15deg);
+		opacity: 1;
+		transition: .7s;
+	}
