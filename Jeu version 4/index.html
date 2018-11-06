@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title class="titre">MasterMind</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="EnTete">
+        <h1 class="Titre">MASTERMIND</h1>
+    </header>
+    <div class="global">
+    <main class="Main">
+        <!--Le bouton démarer permet d'initialiser le jeux et attribut les quatre couleurs à trouver-->
+        <button class="Difficulte easy">Facil</button>
+        <button class="Difficulte normal">Normal</button>
+        <button class="Difficulte Difficil">Dur!!</button>
+        <button class="Demarer Hidden">Démarer la partie</button>
+        <button class="Supprimer Hidden">Supprimer la partie</button>
+
+
+
+    </main>
+    <aside class="Aside">
+        <div class="TitreCote">Couleur</div>
+
+        <!--Les boutons permettent d'attribuer un couleur au case vide-->
+        <button class="BTNcolor Rouge">Rouge</button>
+        <button class="BTNcolor Bleu">Bleu</button>
+        <button class="BTNcolor Violet">Violet</button>
+        <button class="BTNcolor Jaune">Jaune</button>
+        <button class="BTNcolor Vert">Vert</button>
+        <button class="BTNcolor Orange">Orange</button>
+        <button class="BTNcolor Gris">Gris</button>
+        <button class="BTNcolor Cyan">Cyan</button>
+        <!--Supprimer les couleur jouées-->
+        <!--<button class="BTNdelete">Supprimer</button>-->
+        <!--permet de valider la selection une fois les quatre couleurs entrées-->
+        <button class="BTNvalidation /Valider/">Valider</button>
+
+    </aside>
+    </div>
+    <footer class="Pied">
+        <h6 class="petitpied">Ceci est un jeux</h6>
+        <p class="conseil">Si le témoin de coté est de couleur blanche
+            c'est que la couleur est bonne mais pas au bon endroit. En revanche,
+            si le témoin est noir c'est que la couleur est bonne et au bon endroit.
+        </p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

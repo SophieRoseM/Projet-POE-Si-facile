@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Caladea, sans-serif;
+
+}
+
+/*Traitement des balise de base*/
+html{
+    background-color: darkred;
+}
+.TitreCote{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.Titre{
+    color: red;
+    border: .7em inset darkslategrey;
+    border-radius: .7em;
+    text-align: center;
+    margin: auto;
+    width: 7em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+.Pied{
+    background-color: #FA4242;
+    text-align: center;
+    color: black;
+    font-size: .8em;
+    padding: 1em;
+    margin: 0;
+    /*position: fixed;*/
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3.4em;
+}
+.petitpied{
+    font-size: 1em;
+}
+.global{
+    display: flex;
+    margin-left: 1em;
+}
+.Aside{
+    width: 10em;
+    justify-content: right;
+    padding-left: 10em;
+ }
+.Main{
+    width: 5000em;
+    margin-bottom: 4.5em;
+}
+.Hidden{
+    display: none;
+}
+.espacedroit{
+    margin-right: 1em;
+}
+.espacegauche{
+    margin-left: 1em;
+}
+.Rondtest, .Rondcolor{
+    margin-top: .5em;
+    border: .25em solid black;
+    height: 3em;
+    width: 3em;
+    border-radius: 2em;
+}
+
+
+/*Traitement des bouton*/
+
+.BTNcolor{
+    margin-left: 0;
+    margin-right: 1em;
+    margin-bottom: 0.3em;
+    display: list-item;
+    border-radius: 1em;
+    border: .3em solid;
+    background-color: midnightblue;
+    padding: .5em;
+    color: black;
+    font-size: 1.25em;
+    font-weight: bold;
+    width: 5em;
+}
+.BTNcolor:hover, .Difficulte:hover, .BTNvalidation:hover, .Demarer:hover, .BTNdelete:hover, .Supprimer:hover{
+    background-color: lightgray;
+}
+.Rouge{
+    background-color: red;
+}
+.Difficulte{
+    border: .3em inset dimgray;
+
+    background-color: indianred;
+    margin-top: 0.5em;
+    width: 5em;
+    margin-bottom: 2em;
+
+}.BTNvalidation{
+    margin-top: 0.5em;
+    width: 5em;
+    margin-bottom: 2em;
+}
+.BTNdelete{
+    font-size: 1.2em;
+    border: .3em inset dimgray;
+    padding: .5em;
+    font-weight: bold;
+    background-color: maroon;
+}
+.Supprimer{
+    font-size: 1.2em;
+    background-color: orange;
+    border: .3em inset dimgray;
+    padding: .5em;
+    font-weight: bold;
+}
+.BTNvalidation, .Demarer{
+    font-size: 1.2em;
+    background-color: olivedrab;
+    border: .3em inset dimgray;
+    padding: .5em;
+    font-weight: bold;
+
+}
+.Bleu{
+    background-color: blue;
+}
+.Vert{
+    background-color: green;
+}
+.Violet{
+    background-color: purple;
+}
+.Jaune{
+    background-color: yellow;
+}
+.Orange{
+    background-color: orangered;
+}
+.Gris{
+    background-color: gray;
+}
+.Cyan{
+    background-color: cyan;
+}
+
+/*<div class="Ligne12">*/
+/*<span class="Test121"></span> */
+/*<span class="Test122"></span> */
+/*<span class="Couleur121"></span> */
+/*<span class="Couleur122"></span> */
+/*<span class="Couleur123"></span> */
+/*<span class="Couleur124"></span> */
+/*<span class="Test123"></span> */
+/*<span class="Test124"></span> */
+/*</div>*/
