@@ -37,14 +37,14 @@ form.addEventListener('submit', function(event){ //creer une fonction qui corrig
 	if (reponse1Joueur == 3){
 		resultatQ1.innerHTML = "Bonne réponse !";
 		point +=1;
-	}else{ resultatQ1.innerHTML =" La réponse est 3!"};
+	}else{ resultatQ1.innerHTML =" La bonne réponse est 3( voir avec l' évaluation de la promo 2 Udev!"};
 
 
 
 	if (reponse2Joueur === 'd'){
 		resultatQ2.innerHTML= "Bonne réponse !";
 		point +=1;
-	}else{resultatQ2.innerHTML =" La réponse est la d) DELETE TABLE CLIENT!"};
+	}else{resultatQ2.innerHTML =" La bonne réponse est la d) DELETE TABLE CLIENT n'existe pas."};
 
 
 
@@ -52,16 +52,16 @@ form.addEventListener('submit', function(event){ //creer une fonction qui corrig
 	if (reponse3Joueur === 'd'){
 		resultatQ3.innerHTML = "Bonne réponse !";
 		point +=1;
-	}else{ resultatQ3.innerHTML  =" La réponse est d) Permet de combiner les résultats des 2 tables!"};
+	}else{ resultatQ3.innerHTML  =" La bonne réponse est la d) La jointure FULL OUTER JOIN permet de combiner les résultats des 2 tables."};
 
 
 
 	if (reponse4Joueur === 'a'){
 		resultatQ4.innerHTML= "Bonne réponse !";
 		point +=1;
-	}else{ resultatQ4.innerHTML=" La réponse est a) en 1986!"};
+	}else{ resultatQ4.innerHTML=" La bonne réponse est la a) SQL fut normalisé par l'ANSI en 1986."};
 
-//affichePoint.innerHTML=" Vous avez :" + point + "points";
+affichePoint.innerHTML=" Vous avez :" + point + "points";
 
 });
 
