@@ -1,0 +1,88 @@
+html{
+	background-image: url(bureau.jpg);
+	background-repeat: no-repeat;
+	background-size  : cover;
+}
+
+body{
+	
+	font-family: 'Montez-Regular','Cosmic Sans MS',sans-serif;
+	text-align: : center;
+	margin-top: 5em;
+	font-weight: bold;
+
+
+}
+.main{
+	margin-left: 10em;
+	margin-top: 2.1em;
+	margin-right: 10em;
+	font-size: 30px;
+	padding-left: 2em;
+	margin-bottom: 5em;
+	background-image: url(quadrillage.jpg);
+	background-repeat: no-repeat;
+	background-size  : cover;
+	
+}
+@font-face{
+	font-family:Montez-Regular;
+	src:url(Montez-Regular.ttf);
+}
+h1{
+	text-align: center;
+	margin-top: 6.25em;
+	font-size: 40px;
+}
+.Q3,.Q4{
+	font-size: 25px;
+	margin-top: 0em;
+}
+.Q2{
+	font-family: arial,sans-serif;
+	font-size:20px;
+
+}
+
+.bouton{
+	background   : transparent;
+	color        : #484747;
+	border       : 2px solid;
+	border-radius: 0.3em;
+	padding      :0.3em 0.5em;
+	font-size    : 1.2em;
+	font-family  :'Cosmic Sans MS',sans-serif;
+
+
+}
+/*.bouton:hover{
+	color: #FB0202;
+}*/
+.boutonT{
+	text-align: center;
+}
+
+.bouton{ /* effet du bouton*/
+text-transform:uppercase;
+cursor: pointer;
+box-shadow: 0 9px #424040; /* barre sous le bouton taille et couleur*/
+outline:none;
+
+}
+.bouton:hover{
+	box-shadow: 0 6px #424040;/* barre sous le bouton taille et couleur avec la souris dessus*/
+	transform: translateY(7px); /* le hauteur de descente du bouton*/
+}
+
+
+.code{
+	border: 2px black solid;
+	background: white;
+	margin-right: 20em;
+	margin-left: 8em;
+	text-align: center;
+	font-family: arial,sans-serif;
+	font-size:20px;
+
+
+}
